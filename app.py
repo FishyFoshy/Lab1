@@ -70,21 +70,21 @@ def get_stats():
 @app.route('/add/<a>/<b>')
 def add(a, b):
   ans = int(a) + int(b)
-  return ans
+  return str(ans)
 
 @app.route('/subtract/<a>/<b>')
 def subtract(a, b):
   ans = int(a) - int(b)
-  return ans
+  return str(ans)
 
 @app.route('/multiply/<a>/<b>')
 def mult(a, b):
   ans = int(a) * int(b)
-  return ans
+  return str(ans)
 
 @app.route('/divide/<a>/<b>')
 def divide(a, b):
   ans = int(a) / int(b)
-  return ans
+  return str(ans)
 
 app.run(host='0.0.0.0', port=8080, debug=True)
