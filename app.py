@@ -11,6 +11,10 @@ with open('data.json') as f:
 
 
 @app.route('/')
+def get_students():
+    return jsonify(data)    # return student data in response
+
+@app.route('/students')
 def hello_world():
     return 'Hello, World!'  # return 'Hello World' in response
 
